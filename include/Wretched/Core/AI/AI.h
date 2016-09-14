@@ -12,7 +12,7 @@ namespace AI {
   };
   //"results"
   struct QValue {
-    
+
   };
 
   struct Node {
@@ -22,5 +22,11 @@ namespace AI {
   struct Agent {
     std::vector<std::pair<std::vector<State>,float>>state_action_reward;
   };
-  struct ActorCritic: public Agent{};
-}
+  struct ActorCritic: public Acttor;
+  public Action RewardUpdate(*QValue oldq, *QValue newq ) {
+    oldq += alpha * (reqard + gamma * *newq )
+  }
+  public void  QRewardSkeleton() {
+    Action
+  }
+}{}
